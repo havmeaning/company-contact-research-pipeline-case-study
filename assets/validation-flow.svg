@@ -35,9 +35,8 @@
 
   <path class="decision" d="M815 505 L995 575 L815 645 L635 575 Z"/><text class="text" x="815" y="570">Evidence threshold</text><text class="text" x="815" y="592">met?</text>
   <path class="line" d="M815 645 V690"/><text class="tag" x="830" y="670">YES</text>
-  <path class="branch" d="M995 575 V625 H975"/><text class="tag" x="1000" y="555">NO</text>
+  <path class="branch" d="M995 575 H1040 V745 H215 V720"/><text class="tag" x="1000" y="555">NO</text>
 
   <rect class="no" x="70" y="625" width="290" height="90" rx="14"/><text class="text" x="215" y="663">UNRESOLVED</text><text class="note" x="215" y="690">Do not publish unsupported contact</text>
   <rect class="yes" x="670" y="690" width="290" height="65" rx="14"/><text class="text" x="815" y="730">PUBLISH WITH AUDIT TRAIL</text>
-  <path class="branch" d="M975 625 H925 V690"/>
 </svg>

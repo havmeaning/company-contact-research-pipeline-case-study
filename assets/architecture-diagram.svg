@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">V2.1 company-contact research pipeline architecture</title>
+  <desc id="desc">A twelve-stage pipeline moves from input validation through discovery, evidence verification, source binding, publication gating, and audit output.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#17324d"/>
+    </marker>
+    <style>
+      .bg{fill:#f7fafc}.title{font:700 30px Arial,sans-serif;fill:#102a43}.subtitle{font:16px Arial,sans-serif;fill:#334e68}
+      .box{fill:#ffffff;stroke:#176b87;stroke-width:3;rx:12}.gate{fill:#fff7d6;stroke:#8a5b00;stroke-width:3;rx:12}
+      .output{fill:#e8f6ef;stroke:#176b4d;stroke-width:3;rx:12}.label{font:600 15px Arial,sans-serif;fill:#102a43;text-anchor:middle}
+      .small{font:13px Arial,sans-serif;fill:#486581;text-anchor:middle}.arrow{stroke:#17324d;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="title" x="600" y="48" text-anchor="middle">Reliable Company Contact Research Pipeline — V2.1</text>
+  <text class="subtitle" x="600" y="78" text-anchor="middle">Discovery produces candidates; evidence gates determine what may be published.</text>
+
+  <g transform="translate(55 120)">
+    <rect class="box" width="160" height="82"/><text class="label" x="80" y="35">Input</text><text class="label" x="80" y="56">validation</text>
+    <rect class="box" x="185" width="160" height="82"/><text class="label" x="265" y="35">Candidate</text><text class="label" x="265" y="56">discovery</text>
+    <rect class="box" x="370" width="160" height="82"/><text class="label" x="450" y="35">Source</text><text class="label" x="450" y="56">classification</text>
+    <rect class="gate" x="555" width="160" height="82"/><text class="label" x="635" y="29">Company identity</text><text class="label" x="635" y="50">verification</text><text class="small" x="635" y="69">right entity?</text>
+    <rect class="gate" x="740" width="160" height="82"/><text class="label" x="820" y="29">Official-domain</text><text class="label" x="820" y="50">verification</text><text class="small" x="820" y="69">right operator?</text>
+    <rect class="box" x="925" width="160" height="82"/><text class="label" x="1005" y="35">Contact-page</text><text class="label" x="1005" y="56">retrieval</text>
+    <path class="arrow" d="M160 41 H180"/><path class="arrow" d="M345 41 H365"/><path class="arrow" d="M530 41 H550"/><path class="arrow" d="M715 41 H735"/><path class="arrow" d="M900 41 H920"/>
+  </g>
+
+  <path class="arrow" d="M1060 207 V265 H140 V321"/>
+
+  <g transform="translate(55 325)">
+    <rect class="box" width="160" height="82"/><text class="label" x="80" y="35">Field</text><text class="label" x="80" y="56">extraction</text>
+    <rect class="gate" x="185" width="160" height="82"/><text class="label" x="265" y="35">Source</text><text class="label" x="265" y="56">binding</text>
+    <rect class="gate" x="370" width="160" height="82"/><text class="label" x="450" y="35">Contact</text><text class="label" x="450" y="56">validation</text>
+    <rect class="gate" x="555" width="160" height="82"/><text class="label" x="635" y="35">Confidence</text><text class="label" x="635" y="56">gate</text>
+    <rect class="output" x="740" width="160" height="82"/><text class="label" x="820" y="29">Publish or</text><text class="label" x="820" y="50">unresolved</text><text class="small" x="820" y="69">safe outcome</text>
+    <rect class="output" x="925" width="160" height="82"/><text class="label" x="1005" y="35">Audit</text><text class="label" x="1005" y="56">output</text>
+    <path class="arrow" d="M160 41 H180"/><path class="arrow" d="M345 41 H365"/><path class="arrow" d="M530 41 H550"/><path class="arrow" d="M715 41 H735"/><path class="arrow" d="M900 41 H920"/>
+  </g>
+
+  <g transform="translate(75 520)">
+    <rect x="0" y="0" width="1050" height="135" rx="16" fill="#eaf2f8" stroke="#486581" stroke-width="2"/>
+    <text class="label" x="525" y="32">Evidence progression</text>
+    <text class="small" x="175" y="70">1. Page mentions company</text>
+    <text class="small" x="430" y="70">2. Company operates page</text>
+    <text class="small" x="685" y="70">3. Contact belongs to company</text>
+    <text class="small" x="915" y="70">4. Evidence permits publication</text>
+    <path class="arrow" d="M275 78 H325"/><path class="arrow" d="M535 78 H585"/><path class="arrow" d="M790 78 H835"/>
+    <text class="subtitle" x="525" y="115" text-anchor="middle">Each claim requires its own evidence; earlier claims do not imply later ones.</text>
+  </g>
+</svg>

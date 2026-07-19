@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence validation and publication flow</title>
+  <desc id="desc">A candidate must pass identity, operator or domain, source-binding, and evidence-threshold decisions. Any failed decision produces an unresolved result; passing all decisions permits publication.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#193b5a"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.heading{font:700 30px Arial,sans-serif;fill:#102a43}.sub{font:16px Arial,sans-serif;fill:#486581}
+      .start{fill:#dff3ff;stroke:#176b87;stroke-width:3}.decision{fill:#fff7d6;stroke:#8a5b00;stroke-width:3}
+      .yes{fill:#e5f6ec;stroke:#176b4d;stroke-width:3}.no{fill:#fde8e8;stroke:#9b2c2c;stroke-width:3}
+      .text{font:600 16px Arial,sans-serif;fill:#102a43;text-anchor:middle}.note{font:14px Arial,sans-serif;fill:#334e68;text-anchor:middle}
+      .line{stroke:#193b5a;stroke-width:3;fill:none;marker-end:url(#arrow)}.branch{stroke:#8a2c2c;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .tag{font:700 14px Arial,sans-serif;fill:#334e68}
+    </style>
+  </defs>
+  <rect class="bg" width="1100" height="780"/>
+  <text class="heading" x="550" y="45" text-anchor="middle">Validation Flow: Evidence Before Publication</text>
+  <text class="sub" x="550" y="75" text-anchor="middle">A failed required gate produces an explicit unresolved outcome.</text>
+
+  <rect class="start" x="395" y="105" width="310" height="58" rx="29"/><text class="text" x="550" y="140">Candidate found</text>
+  <path class="line" d="M550 163 V205"/>
+
+  <path class="decision" d="M550 205 L730 265 L550 325 L370 265 Z"/><text class="text" x="550" y="260">Company identity</text><text class="text" x="550" y="282">verified?</text>
+  <path class="line" d="M550 325 V360"/><text class="tag" x="565" y="348">YES</text>
+  <path class="branch" d="M370 265 H215 V625"/><text class="tag" x="285" y="250">NO</text>
+
+  <path class="decision" d="M550 360 L730 420 L550 480 L370 420 Z"/><text class="text" x="550" y="415">Operator or domain</text><text class="text" x="550" y="437">verified?</text>
+  <path class="line" d="M550 480 V515"/><text class="tag" x="565" y="502">YES</text>
+  <path class="branch" d="M370 420 H215"/><text class="tag" x="285" y="405">NO</text>
+
+  <path class="decision" d="M550 515 L730 575 L550 635 L370 575 Z"/><text class="text" x="550" y="570">Contact bound</text><text class="text" x="550" y="592">to its source?</text>
+  <path class="line" d="M730 575 H815"/><text class="tag" x="755" y="558">YES</text>
+  <path class="branch" d="M370 575 H215"/><text class="tag" x="285" y="560">NO</text>
+
+  <path class="decision" d="M815 505 L995 575 L815 645 L635 575 Z"/><text class="text" x="815" y="570">Evidence threshold</text><text class="text" x="815" y="592">met?</text>
+  <path class="line" d="M815 645 V690"/><text class="tag" x="830" y="670">YES</text>
+  <path class="branch" d="M995 575 V625 H975"/><text class="tag" x="1000" y="555">NO</text>
+
+  <rect class="no" x="70" y="625" width="290" height="90" rx="14"/><text class="text" x="215" y="663">UNRESOLVED</text><text class="note" x="215" y="690">Do not publish unsupported contact</text>
+  <rect class="yes" x="670" y="690" width="290" height="65" rx="14"/><text class="text" x="815" y="730">PUBLISH WITH AUDIT TRAIL</text>
+  <path class="branch" d="M975 625 H925 V690"/>
+</svg>

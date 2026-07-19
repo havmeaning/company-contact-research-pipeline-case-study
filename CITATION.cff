@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you reference this documentation, please cite it using the metadata below."
+title: "Reliable Company Contact Research Pipeline: An Anonymized Technical Case Study"
+type: software
+authors:
+  - family-names: Howard
+    given-names: Sheldon
+date-released: 2026-07-19
+abstract: >-
+  Documentation-only technical case study describing an anonymized redesign and
+  controlled validation of a company-contact research workflow. No executable
+  project source code or confidential evidence is included.
+keywords:
+  - data quality
+  - evidence governance
+  - entity resolution
+  - regression testing
+  - responsible automation

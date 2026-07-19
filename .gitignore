@@ -1,0 +1,27 @@
+# Operating-system and editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local and confidential material
+.env
+.env.*
+*.log
+*.key
+*.pem
+*.xlsx
+*.xls
+*.zip
+*.7z
+*.csv
+*.tsv
+private/
+evidence/
+data/
+screenshots/
+
+# Generated temporary files
+*.tmp
+*.bak
+~$*

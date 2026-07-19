@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Before and after regression metrics</title>
+  <desc id="desc">Five controlled-sample comparisons: harmful false positives decreased from 24 to zero, harmful high-confidence errors from 21 to zero, mixed-source contacts from present to zero, header defects from one to zero, and deterministic tests increased from zero to seventeen.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.heading{font:700 30px Arial,sans-serif;fill:#102a43}.sub{font:16px Arial,sans-serif;fill:#486581}
+      .row{fill:#fff;stroke:#bcccdc;stroke-width:2}.metric{font:600 17px Arial,sans-serif;fill:#102a43}.base{font:700 26px Arial,sans-serif;fill:#9b2c2c;text-anchor:middle}.v21{font:700 26px Arial,sans-serif;fill:#176b4d;text-anchor:middle}
+      .label{font:700 15px Arial,sans-serif;fill:#334e68;text-anchor:middle}.qual{font:14px Arial,sans-serif;fill:#486581;text-anchor:middle}
+      .arrow{font:700 30px Arial,sans-serif;fill:#176b87;text-anchor:middle}.barbad{fill:#c53030}.bargood{fill:#23875b}.barzero{fill:#d9e2ec}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="heading" x="600" y="48" text-anchor="middle">Controlled Regression Sample: Before and V2.1</text>
+  <text class="sub" x="600" y="78" text-anchor="middle">Risk-based 30-company sample — not an estimate for the full dataset</text>
+
+  <text class="label" x="700" y="122">BASELINE</text><text class="label" x="980" y="122">V2.1</text>
+
+  <g transform="translate(70 140)">
+    <rect class="row" width="1060" height="82" rx="10"/>
+    <text class="metric" x="25" y="35">Harmful false-positive records</text><text class="qual" x="195" y="60">record count out of 30</text>
+    <rect class="barbad" x="520" y="27" width="240" height="28" rx="5"/><text class="base" x="700" y="58">24</text>
+    <text class="arrow" x="840" y="55">→</text><rect class="barzero" x="930" y="27" width="20" height="28" rx="5"/><text class="v21" x="980" y="58">0</text>
+  </g>
+  <g transform="translate(70 235)">
+    <rect class="row" width="1060" height="82" rx="10"/>
+    <text class="metric" x="25" y="35">Harmful high-confidence errors</text><text class="qual" x="195" y="60">published outcomes</text>
+    <rect class="barbad" x="520" y="27" width="210" height="28" rx="5"/><text class="base" x="700" y="58">21</text>
+    <text class="arrow" x="840" y="55">→</text><rect class="barzero" x="930" y="27" width="20" height="28" rx="5"/><text class="v21" x="980" y="58">0</text>
+  </g>
+  <g transform="translate(70 330)">
+    <rect class="row" width="1060" height="82" rx="10"/>
+    <text class="metric" x="25" y="35">Mixed-source contacts</text><text class="qual" x="195" y="60">cross-domain attribution</text>
+    <text class="base" x="700" y="54">present</text><text class="arrow" x="840" y="55">→</text><text class="v21" x="980" y="54">0</text>
+  </g>
+  <g transform="translate(70 425)">
+    <rect class="row" width="1060" height="82" rx="10"/>
+    <text class="metric" x="25" y="35">Header defects</text><text class="qual" x="195" y="60">reproduced regression</text>
+    <rect class="barbad" x="650" y="27" width="50" height="28" rx="5"/><text class="base" x="700" y="58">1</text>
+    <text class="arrow" x="840" y="55">→</text><rect class="barzero" x="930" y="27" width="20" height="28" rx="5"/><text class="v21" x="980" y="58">0</text>
+  </g>
+  <g transform="translate(70 520)">
+    <rect class="row" width="1060" height="82" rx="10"/>
+    <text class="metric" x="25" y="35">Deterministic tests</text><text class="qual" x="195" y="60">replay and regression checks</text>
+    <rect class="barzero" x="650" y="27" width="20" height="28" rx="5"/><text class="base" x="700" y="58">0</text>
+    <text class="arrow" x="840" y="55">→</text><rect class="bargood" x="930" y="27" width="170" height="28" rx="5"/><text class="v21" x="980" y="58">17</text>
+  </g>
+
+  <text class="sub" x="600" y="650" text-anchor="middle">V2.1 accepted lower recall: 25 of 30 records remained unresolved.</text>
+  <text class="qual" x="600" y="677">Validated intermediate release; no production or full-dataset claim.</text>
+</svg>
